@@ -7,7 +7,8 @@ setup(
     author='Zhi Li',
     author_email='lucyundeadshao@gmail.com',
     # Needed to actually package something
-    packages=['zucchini'],
+    package_dir = {'zucchini/':''}
+    packages=['zucchini/ArepoICs','zucchini/utils'],
     # Needed for dependencies
     install_requires=['numpy','scipy','h5py','astropy'],
     # *strongly* suggested for sharing
